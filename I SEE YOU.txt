@@ -1,0 +1,151 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "YOU DON'T SEE ME By IAmOnTablet", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local Tab = Window:MakeTab({
+    Name = "Bulbs",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+    Name = "Bulbs & Stuff"
+})
+
+OrionLib:MakeNotification({
+    Name = "I SEE YOU",
+    Content = "Nah bro I see YOU",
+    Image = "rbxassetid://4483345998",
+    Time = 5
+})
+
+Tab:AddButton({
+    Name = "Get Green Bulb",
+    Callback = function()
+              firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, game:GetService("Workspace").Green.Bulb, 0)
+      end    
+})
+
+Tab:AddButton({
+    Name = "Get Blue Bulb",
+    Callback = function()
+              firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, game:GetService("Workspace").Blue.Bulb, 0)
+      end    
+})
+
+Tab:AddButton({
+    Name = "Get Orange Bulb",
+    Callback = function()
+              firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, game:GetService("Workspace").Orange.Bulb, 0)
+      end    
+})
+
+Tab:AddButton({
+    Name = "Get Yellow Bulb",
+    Callback = function()
+              firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, game:GetService("Workspace").Yellow.Bulb, 0)
+      end    
+})
+
+Tab:AddButton({
+    Name = "Get Teal Bulb",
+    Callback = function()
+              firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, game:GetService("Workspace").Teal.Bulb, 0)
+      end    
+})
+
+Tab:AddButton({
+    Name = "Get Purple Bulb",
+    Callback = function()
+              firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, game:GetService("Workspace").Purple.Bulb, 0)
+      end    
+})
+
+Tab:AddButton({
+    Name = "Get Pink Bulb",
+    Callback = function()
+              firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, game:GetService("Workspace").Pink.Bulb, 0)
+      end    
+})
+
+Tab:AddButton({
+    Name = "Get Red Bulb",
+    Callback = function()
+              firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, game:GetService("Workspace").Red.Bulb, 0)
+      end    
+})
+
+local Tab = Window:MakeTab({
+    Name = "Teleports",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+    Name = "TPs"
+})
+
+Tab:AddButton({
+    Name = "TP to red room",
+    Callback = function()
+              local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+rootPart.CFrame = CFrame.new(36.5, 12, -2.5, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+      end    
+})
+
+Tab:AddButton({
+    Name = "TP to green room",
+    Callback = function()
+              local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+rootPart.CFrame = CFrame.new(-7.49995422, 36, -268.5, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+      end    
+})
+
+Tab:AddButton({
+    Name = "TP to blue room",
+    Callback = function()
+              local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+rootPart.CFrame = CFrame.new(112.499924, 12, -353.5, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+      end    
+})
+
+Tab:AddButton({
+    Name = "TP to orange room",
+    Callback = function()
+              local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+rootPart.CFrame = CFrame.new(-138.5, 12, -55.5, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+      end    
+})
+
+Tab:AddButton({
+    Name = "TP to yellow room",
+    Callback = function()
+              local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+rootPart.CFrame = CFrame.new(176.500015, 11.5, -2.49995375, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+      end    
+})
+
+Tab:AddButton({
+    Name = "TP to teal room",
+    Callback = function()
+              local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+rootPart.CFrame = CFrame.new(-95.4999161, 12, 40.5000458, -1.1920929e-07, -0, -1.00000012, 0, 1, -0, 1.00000012, 0, -1.1920929e-07)
+      end    
+})
+
+Tab:AddButton({
+    Name = "TP to purple room",
+    Callback = function()
+              local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+rootPart.CFrame = CFrame.new(182.500031, 12, -274.499908, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+      end    
+})
+
+Tab:AddButton({
+    Name = "TP to pink room",
+    Callback = function()
+              local rootPart = game.Players.LocalPlayer.Character.HumanoidRootPart
+rootPart.CFrame = CFrame.new(-164.5, 12, -111.500031, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+      end    
+})
+OrionLib:Init()
